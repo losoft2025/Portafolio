@@ -1,0 +1,119 @@
+/* Variables de colores */
+:root {
+    --color-primary: #3498db;
+    --color-secondary: #2c3e50;
+    --color-light: #f8f9fa;
+    --color-dark: #343a40;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--color-dark);
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+.hero-header {
+    background-color: var(--color-secondary);
+    color: white;
+    padding: 100px 5%;
+    text-align: center;
+    
+}
+
+.hero-header h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero-header p {
+    font-size: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Sección de contacto */
+.contacto-seccion {
+    background: white;
+    padding: 60px 5%;
+    text-align: center;
+}
+
+.contacto-contenido {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contacto-seccion h2 {
+    color: var(--color-primary);
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+/* Formulario */
+.formulario-contacto {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.formulario-contacto label {
+    font-weight: bold;
+    text-align: left;
+}
+
+.formulario-contacto input,
+.formulario-contacto textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.formulario-contacto button {
+    background-color: var(--color-primary);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.formulario-contacto button:hover {
+    background-color: #2980b9;
+}
+
+/* Footer */
+.footer {
+    background-color: var(--color-secondary);
+    color: white;
+    padding: 40px 5%;
+    text-align: center;
+    margin-top: 50px;
+}
+
+
+  /* estilo boton inicio*/
+  #btnInicio {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s ease-in-out;
+  }
+  
+  #btnInicio:hover {
+    background-color: #2980b9;
+  }

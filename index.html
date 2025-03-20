@@ -4,32 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Portafolio</title>
-    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="styles/Style.css">
+    <!-- font Awesome para los iconos -->
 </head>
 
 <body>
+        
     <!-- Navbar -->
-     <nav>
+     
+    <nav id="navbar">
         <ul>
-            <li><a href="#inicio">inicio</a></li>
-            <li><a href="#sobre-mi">Sobre mí</a></li>
-            <li><a href="#proyectos">Proyectos</a> </li>
-            <li><a href="#contacto">Contacto</a></li>
+            <li><a href="aboutMe.html">Sobre mí</a></li>
+            <li><a href="Projects.html">Proyectos</a> </li>
+            <li><a href="contactMe.html">Contacto</a></li>
         </ul>
+        <div class="menu-toggle">
+            <i class="fan fa-bars"></i>
+        </div>
      </nav>
-    <!-- Cabecera de la Pagina -->
-    <header>
-        <h1>Oscar Mauricio</h1>
-        <img src="imagenes/p1.jpeg" alt="perfil">
-        <p>"Ingeniero de software apasionado por la programación y el aprendizaje continuo, 
-            con el objetivo de convertirme en un desarrollador full stack capaz de crear 
-            soluciones innovadoras."
-        </p>
-        <!-- Boton para cambiar entre tema claro y oscuro -->  
-         <button id="theme-button">Change theme </button>  
-    </header>
-        <!-- conexion al archivo script.js -->
-    <script src="script.js"></script>
 
-</body>
+    <!--seccion de inicio-->
+    <section>
+    <!-- Cabecera de la Pagina -->
+
+        <header class="hero-header" id="inicio">
+            <h1>Oscar <span>Mauricio</span> </h1>
+            <img src="imagenes/p1.jpeg" alt="perfil">
+            <q class="frase">"Este portafolio no es para crear mi imagen  sino el algoritmo que te da una idea de ella"</q>
+        </header>  
+            
+    <!-- contenedor de animacion-->
+        <div id="border">                  <!--borde donde se mueve la figura-->
+            <div id="walking">🚕</div>  
+        </div>
+    </section>   
+
+    <!--footer-->
+        <footer class="footer">
+            <p>&copy; 2025 Oscar Mauricio Gonzalez.</p>
+        <p>( +57 ) 3185183628</p>    
+        </footer>
+    
+    <!-- conexion al archivo script.js -->
+    <script src="scripts/script.js"></script>
+    </body>
 </html>

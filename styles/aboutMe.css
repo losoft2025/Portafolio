@@ -1,0 +1,249 @@
+/* Variables de colores y fuentes */
+:root {
+    --color-primary: #3498db;
+    --color-secondary: #2c3e50;
+    --color-accent: #e74c3c;
+    --color-light: #f8f9fa;
+    --color-dark: #343a40;
+    
+  }
+  
+  body {
+    font-family:serif;
+    line-height: 1.6;
+    color:var(--color-dark) ;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Header con imagen de fondo */
+  .hero-header {
+    background-color: var(--color-secondary);
+    background-image: linear-gradient(rgba(44, 62, 80, 0.9), rgba(44, 62, 80, 0.7));
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 100px 5%;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  
+  .hero-header h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    font-style: italic;
+  }
+  
+  .hero-header p {
+    font-size: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  /* Contenedor principal - ancho completo */
+  .contenedor {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Sección Sobre Mí - ancho completo con contenido centrado */
+  .seccion {
+    background: white;
+    padding: 60px 5%;
+    margin-bottom: 50px;
+  }
+  
+  .seccion-contenido {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+  
+  /* Título de la sección */
+  .seccion h2 {
+    color: var(--color-primary);
+    border-bottom: 2px solid var(--color-light);
+    padding-bottom: 15px;
+    margin-bottom: 40px;
+    font-size: 32px;
+    text-align: center;
+  }
+  
+  /* Diseño en dos columnas más balanceado */
+  .contenido-sobre-mi {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 60px;
+    flex-wrap: wrap;
+  }
+  
+  /* Columna izquierda */
+  .texto-sobre-mi {
+    flex: 2;
+    min-width: 350px;
+  }
+  
+  .texto-sobre-mi p {
+    margin-bottom: 20px;
+    font-size: 17px;
+    line-height: 1.8;
+    color: #555;
+  }
+  
+  /* Estilo para habilidades */
+  .texto-sobre-mi h3 {
+    color: var(--color-secondary);
+    margin-top: 40px;
+    font-size: 24px;
+  }
+  
+  .texto-sobre-mi ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding: 0;
+    list-style: none;
+    margin-top: 20px;
+  }
+  
+  .texto-sobre-mi ul li {
+    background-color: var(--color-primary);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    display: inline-block;
+    font-size: 16px;
+    transition: all 0.3s ease;
+  }
+  
+  .texto-sobre-mi ul li:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(52, 152, 219, 0.3);
+  }
+  
+  /* Columna derecha */
+  .info-personal {
+    flex-basis: 350px;
+    background: var(--color-light);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    border-left: 4px solid var(--color-primary);
+  }
+  
+  .info-personal h3 {
+    color: var(--color-secondary);
+    margin-top: 0;
+    margin-bottom: 25px;
+    font-size: 24px;
+  }
+  
+  /* Lista de información personal */
+  .info-personal ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .info-personal ul li {
+    margin-bottom: 18px;
+    padding-bottom: 15px;
+    border-bottom: 1px dashed #ddd;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+  }
+  
+  .info-personal ul li:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+  }
+  
+  .info-personal ul li strong {
+    color: var(--color-secondary);
+  }
+  
+  .info-personal ul li span {
+    font-weight: normal;
+    color: #666;
+  }
+  
+    
+  /* Footer - ancho completo */
+  .footer {
+    background-color: var(--color-secondary);
+    color: white;
+    padding: 40px 5%;
+    text-align: center;
+  }
+  
+  .footer p {
+    margin: 0;
+  }
+
+  /* estilo boton inicio*/
+#btnInicio {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 15px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s ease-in-out;
+}
+
+#btnInicio:hover {
+  background-color: #2980b9;
+}
+  
+  /* Responsive design */
+  @media (max-width: 992px) {
+    .contenido-sobre-mi {
+      gap: 40px;
+    }
+    
+    .hero-header {
+      padding: 80px 5%;
+    }
+    
+    .hero-header h1 {
+      font-size: 36px;
+    }
+  }
+  
+ @media (max-width: 768px) {
+    .contenido-sobre-mi {
+      flex-direction: column;
+      gap: 30px;
+    }
+    
+    .info-personal {
+      width: 100%;
+      flex-basis: auto;
+    }
+    
+    .seccion {
+      padding: 40px 5%;
+    }
+    
+    .hero-header {
+      padding: 60px 5%;
+    }
+    
+    .hero-header h1 {
+      font-size: 32px;
+    }
+    
+    .hero-header p {
+      font-size: 18px;
+    }
+  }
+    
