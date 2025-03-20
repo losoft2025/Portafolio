@@ -1,0 +1,168 @@
+/* tema claro con variables globales:*/
+:root {
+    --bg-color: rgba(67, 57, 67, 0.5) ; /* fondo claro*/
+    --txt-color: #b1aaaa ; /* texto negro*/
+    --header-bg-color: #060111; ; /* fondo oscuro del encabezado*/
+    --header-txt-color:#b1aaaa; /*texto blanco del encabezado */
+    --border-color: #5f5a6b; /* borde del encabezado*/
+    --txt-color2:rgb(161, 3, 129);
+
+}
+ /* Aplicar las variables */
+ 
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background:#e7e5e7; /* color de fondo*/
+    color: var(--bg-color); /* color de texto*/ 
+    width:100vw;
+}
+
+
+
+/* estilos para la frase*/
+.frase{
+    position: relative;     /* posicionamiento de etiquetas*/
+    padding: 0 70px;        /* espacio entre entiquetas*/
+    font-size:25px;
+    font-style: italic;
+    bottom: 0px;
+    top: 30px;
+    color: #060111;
+    
+  
+}
+
+/* etiqueta de apertuta*/
+.frase::before{
+    content: "<q>";         /* el texto de la etiqueta*/
+    position: absolute;     /* posicion absoluta con respecto al parrafo*/
+    left: 20px;             /* posicion desde la izquierda*/
+    color: #e07a9b;       /* color rosa*/
+    font-family: monospace; /* fuente de codigo*/
+    font-weight: bold;      /* negrita*/
+}
+
+/* Etiqueta de cierre*/
+.frase::after{
+    content: "</q>";        /* el texto de la etiqueta*/
+    position: absolute;     /* posicionamienti absoluto*/
+    right: 10px;            /* posicionamiento desde la derecha*/
+    color: #e07a9b;       /* color rosa*/
+    font-family:monospace;  /* fuente de codigo*/
+    font-weight: bold;      /* negrita*/
+}
+
+/* Estilo de navegacion */
+nav {
+    background-color: var(--header-bg-color); /* fondo de navbar con variable del tema*/
+    padding: 15px 0; /* espacio interno arriba y abajo */
+    text-align: center;
+}
+
+nav ul {
+    list-style: none; /* elimina los estilos de lista ( Puntos o numeros) */
+    padding: 0; /* elimina el relleno por defecto */
+    margin: 0; /* elimina el margen por defecto */
+    display: flex;/* usa flexbox para organizar los elementos en una fila */
+    justify-content: center; /* centra los elementos en la barra de navegacion */
+    gap: 50px; /* espaciado entre elementos */
+}
+
+nav ul li a {
+    text-decoration: none; /* elimina el subrayado de los enlaces */
+    color: var(--header-txt-color); /* aplica el color del texto segun el tema */
+    font-weight: bold; /* hace que el texto sea mas grueso */
+    font-size: 22px; /* tamaño letra navbar */
+    transition: color 0.3s; /* agrega una animacion suave al cambiar el color */
+}
+nav ul a:hover {
+    color: var(--border-color);/* cambia el color del texto cuando el usuario pasa el mouse */
+}
+
+
+/* estilo de encabezado*/
+
+header {
+    text-align: center;  /* centra el texto dentro del emento <header> */
+    background:#010a2c8b; /* Usa el color definido en la variable --header-bg-color. El color depende del tema actual. */
+    color: var(--header-txt-color); /*  Usa el color definido en la variable --header-txt-color. El color depende del tema actual. */                              
+    padding: 150px;                             
+    border-bottom: 1px solid var(--border-color);
+    display: flex; /* activa el modelo de caja flexible */
+    flex-direction: column; /* acomoda los elementos en columna (uno debajo de otro ) */
+    align-items: center; /* centra los elementos horizontalmente */
+    gap: 15px; /*agrega separacion entre los elementos del header */
+    
+
+     
+}
+/* estilo para imagen de perfil */
+ header img {
+    max-width: 15%; /* la imagen se ajusta al tamaño del contenedor */
+    height: auto; /* mantiene la proporcion original de la imagen */
+    box-shadow: 0 4px 6px rgba(37, 37, 198, 0.229); /* sombra elegante */
+    padding: 1px;
+}
+/* ajustar párrafo dentro de header */
+header p {
+    max-width: 60%;         /* limita el ancho del parrafo */
+    font-size: 1.4em;       /* tamaño del texto mas grande */
+    line-height: 1.5;       /* espaciado entre lineas      */
+    text-align: justify;     /* asegura que el texto esté centrado*/
+    color: var(--txt-color);
+
+}
+ /* efecto de dos colores en el nombre: */
+header h1 {
+    color: #06062b;
+    font-size: 2.5em; /* Aumenta el tamaño del texto*/
+    font-weight: bold; /* hace que el texto sea mas grueso*/
+    text-align: center; /* asegura que el texto este centrado*/
+    font-style: italic;
+    margin: 20px 0;
+}
+
+/* aplica color diferente a Mauricio*/
+header h1 span {
+    color:rgb(161, 3, 129); /* cambia el color a la segunda parte de nombre*/
+}
+
+
+/* Efecto cuando pasas el mouse */
+#theme-button:hover {
+    background-color: var(--header-bg-color); /* cambio de color a pasar el mouse */
+    transform: scale(1.1);/* aumenta un poco el tamaño para el efecto dinamico */
+}
+
+/* estilos de border*/
+#border{
+    position: relative;
+    width: 50%;
+    height: 30px;
+    background-color:#23293a; 
+    margin: 0px auto;
+    overflow: hidden;
+    
+}
+
+#walking {
+    position: absolute;
+    font-size: 30px; /* Un poco más grande para el coche de carreras */
+    bottom: -6px; /* Ajustado para que las ruedas toquen el borde */
+    left: -50px;
+    filter: drop-shadow(0 0 3px rgba(255, 0, 0, 0.5)); /* Efecto de brillo rojo para más velocidad */
+  }
+
+  /* Footer - ancho completo */
+  .footer {
+    background-color: var(--color-secondary);
+    color: rgb(43, 40, 40);
+    padding: 40px 5%;
+    text-align: center;
+  }
+  
+  .footer p {
+    margin: 0;
+  }
