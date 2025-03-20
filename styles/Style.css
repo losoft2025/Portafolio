@@ -59,6 +59,9 @@ nav {
     background-color: var(--header-bg-color); /* fondo de navbar con variable del tema*/
     padding: 15px 0; /* espacio interno arriba y abajo */
     text-align: center;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
 }
 
 nav ul {

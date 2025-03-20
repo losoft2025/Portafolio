@@ -117,3 +117,55 @@ body {
   #btnInicio:hover {
     background-color: #2980b9;
   }
+
+  /* icono flotante*/
+  .whatsapp-float {
+    position: fixed;
+    bottom: 80px; /* Se sube el botón */
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: #25d366;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+    z-index: 1000;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1);
+}
+
+.whatsapp-float img {
+    width: 40px;
+    height: 40px;
+}
+
+/*correo*/
+.email-float {
+    position: fixed;
+    bottom: 150px; /* Ajusta la posición arriba del WhatsApp */
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: #D44638; /* Rojo de Gmail */
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+    z-index: 1000;
+}
+
+.email-float:hover {
+    transform: scale(1.1);
+}
+
+.email-float img {
+    width: 40px;
+    height: 40px;
+}
